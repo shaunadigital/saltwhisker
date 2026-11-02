@@ -196,6 +196,10 @@ button:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
 .backup .bnote { margin: 0; font-family: 'Kalam', cursive; font-size: 15px; line-height: 1.35; color: #5a4a3a; }
 .backup .brow, .backup .row { display: flex; gap: 10px; }
 .backup .btn { flex: 1; min-height: 44px; font-size: 15px; }
+.swlinks { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 18px; margin: 14px 0 0; font-family: 'Kalam', cursive; font-size: 17px; pointer-events: auto; }
+.journal .swlinks { margin: 22px auto 8px; }
+.swlinks a { color: var(--tide); text-underline-offset: 3px; }
+.swlinks a:hover, .swlinks a:focus-visible { color: var(--deep); }
 .backup textarea { width: 100%; box-sizing: border-box; font-family: 'Courier Prime', monospace; font-size: 13px; padding: 8px; border: 1.5px solid var(--edge); border-radius: 10px; background: #fbf6ea; color: var(--ink); resize: none; }
 
 .debug {
@@ -221,6 +225,7 @@ button:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
       <li>Hold to reel. Keep the marker in the green.</li>
     </ul>
     <button class="btn primary" id="startBtn">CAST OFF</button>
+    <p class="swlinks"><a href="https://shauna.digital/games/">More games</a><a href="#feedback" data-feedback>Feedback</a><a href="https://shauna.dev">Made by Shauna</a></p>
   </div>
 </div>
 <canvas id="game" aria-label="Walter, a tuxedo cat, fishing off the end of a pier" role="img"></canvas>
@@ -292,6 +297,7 @@ button:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
     <div class="row" id="backupRow" hidden><button class="btn primary" id="backupRestore">RESTORE</button><button class="btn" id="backupCancel">CANCEL</button></div>
     <p class="bnote" id="backupMsg" aria-live="polite"></p>
   </div>
+  <p class="swlinks"><a href="https://shauna.digital/games/">More games</a><a href="#feedback" data-feedback>Feedback</a><a href="https://shauna.dev">Made by Shauna</a></p>
 </div>
 
 <div class="debug" id="debug" hidden></div>
@@ -2622,5 +2628,6 @@ window.__tb = {
   boat() { BOAT.start = null; BOAT.next = 0; }, CLOUDS,
 };
 </script>
+<script src="https://shauna.digital/games/feedback.js" defer></script>
 </body>
 </html>
