@@ -2,7 +2,7 @@
 
 A painted fishing game for the browser. Walter, a tuxedo cat in a yellow sou'wester, fishes off the end of an ocean pier and keeps a journal (the Tidebook) of everything he catches.
 
-Play it at https://games.shauna.digital/saltwhisker/
+Play it at https://shauna.digital/games/saltwhisker/
 
 ## How a session works
 
@@ -31,7 +31,7 @@ The basic "hold to cast" and "wait for the dip" hints stop showing after `TUNE.q
 
 ## Code layout
 
-Everything is in `index.html`: canvas plus plain JavaScript, no build step, no outside dependencies. The three fonts are in `fonts/` (Open Font License). `LICENSE.md`: the code is MIT, the art and Walter are all rights reserved. Asset paths must stay relative, because the game is served both at its own domain and under `/saltwhisker` on games.shauna.digital.
+Everything is in `index.html`: canvas plus plain JavaScript, no build step, no outside dependencies. The three fonts are in `fonts/` (Open Font License). `LICENSE.md`: the code is MIT, the art and Walter are all rights reserved. Asset paths must stay relative, because the game is served both at its own domain and under `/saltwhisker` on shauna.digital/games.
 
 Sections inside the script, in order:
 
